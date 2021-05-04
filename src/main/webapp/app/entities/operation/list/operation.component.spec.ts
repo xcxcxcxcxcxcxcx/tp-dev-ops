@@ -82,7 +82,7 @@ describe('Component Tests', () => {
       comp.reset();
 
       // THEN
-      expect(comp.page).toEqual(0);
+      expect(comp.page).toBe(true);
       expect(service.query).toHaveBeenCalledTimes(2);
       expect(comp.operations[0]).toEqual(jasmine.objectContaining({ id: 123 }));
     });

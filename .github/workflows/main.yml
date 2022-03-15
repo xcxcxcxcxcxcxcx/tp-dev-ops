@@ -31,4 +31,6 @@ jobs:
           java-version: '15.x'          
     # Runs a single command using the runners shell
       - name: Install node.js packages
-        run: npm install
+        #run: npm install
+        run: npm run ci:frontend:test
+        

@@ -32,5 +32,6 @@ jobs:
     # Runs a single command using the runners shell
       - name: Install node.js packages
         #run: npm install
+        #./mvnw -ntp verify -DskipTests --batch-mode "-Pprod" "-Pe2e" "-Denforcer.skip=true"
         run: npm run ci:frontend:test
         
